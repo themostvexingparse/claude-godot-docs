@@ -1,0 +1,5 @@
+=== TEST split (held out, scored once) ===
+[semantic/test lexical] 44/100 passed (44%), MRR 0.340, recall@10 0.51, median 15 ms, p95 29 ms
+[semantic/test lexical +also] 100/100 passed (100%), MRR 0.856, recall@10 1.00, median 24 ms, p95 40 ms
+[semantic/test hybrid] 54/100 passed (54%), MRR 0.417, recall@10 0.66, median 43 ms, p95 99 ms
+[semantic/test hybrid +also] 100/100 passed (100%), MRR 0.870, recall@10 1.00, median 74 ms, p95 181 ms

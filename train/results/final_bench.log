@@ -1,0 +1,63 @@
+12:57:32 building vectors for gdocs-bge-small
+[godot_docs] Embedding with gdocs-bge-small: 31113 passages, 0 cached, 31113 to embed ...
+[godot_docs]   2048/31113 embedded (3s, 646/s)
+[godot_docs]   4096/31113 embedded (7s, 577/s)
+[godot_docs]   6144/31113 embedded (11s, 543/s)
+[godot_docs]   8192/31113 embedded (16s, 503/s)
+[godot_docs]   10240/31113 embedded (22s, 466/s)
+[godot_docs]   12288/31113 embedded (28s, 437/s)
+[godot_docs]   14336/31113 embedded (35s, 407/s)
+[godot_docs]   16384/31113 embedded (43s, 379/s)
+[godot_docs]   18432/31113 embedded (53s, 351/s)
+[godot_docs]   20480/31113 embedded (63s, 323/s)
+[godot_docs]   22528/31113 embedded (77s, 291/s)
+[godot_docs]   24576/31113 embedded (95s, 258/s)
+[godot_docs]   26624/31113 embedded (121s, 221/s)
+[godot_docs]   28672/31113 embedded (161s, 178/s)
+[godot_docs]   30720/31113 embedded (221s, 139/s)
+[godot_docs]   31113/31113 embedded (234s, 133/s)
+[godot_docs] Embedded 31113 passages in 233.8s -> godot_docs_index_vectors.gdocs-bge-small.npz
+schema: 1
+tool: 08c356162431
+fingerprint: 33e08e14c517541fac3d9069e82fb3ee2fc99a10
+godot_version: 4.5
+built_at: 2026-10-07 11:35:31
+docs_root: C:\Users\ozano\Desktop\godot-docs
+entries: 29293
+classes: 1013
+pages: 485
+code_blocks: 3651
+aliases: 365
+index_path: C:\Users\ozano\Desktop\godot-docs\_gdsearch\godot_docs_index.db
+model: gdocs-bge-small
+model_file: model_int8.onnx
+vectors_path: C:\Users\ozano\Desktop\godot-docs\_gdsearch\godot_docs_index_vectors.gdocs-bge-small.npz
+vectors: ready
+passages: 31113
+sweep bge-small-en-v1.5 w=0.2: core 57/58 (98%) MRR 0.876 R@10 1.00 18ms | dev 42/75 (56%) MRR 0.454 R@10 0.71 27ms
+sweep bge-small-en-v1.5 w=0.3: core 56/58 (97%) MRR 0.891 R@10 1.00 23ms | dev 42/75 (56%) MRR 0.465 R@10 0.72 35ms
+sweep bge-small-en-v1.5 w=0.4: core 56/58 (97%) MRR 0.889 R@10 1.00 24ms | dev 45/75 (60%) MRR 0.479 R@10 0.72 33ms
+sweep bge-small-en-v1.5 w=0.5: core 56/58 (97%) MRR 0.887 R@10 1.00 23ms | dev 46/75 (61%) MRR 0.475 R@10 0.72 35ms
+sweep bge-small-en-v1.5 w=0.6: core 55/58 (95%) MRR 0.882 R@10 1.00 22ms | dev 46/75 (61%) MRR 0.476 R@10 0.71 32ms
+sweep bge-small-en-v1.5 w=0.8: core 54/58 (93%) MRR 0.870 R@10 0.98 24ms | dev 45/75 (60%) MRR 0.484 R@10 0.72 36ms
+sweep bge-small-en-v1.5 w=1.0: core 54/58 (93%) MRR 0.870 R@10 0.98 21ms | dev 44/75 (59%) MRR 0.482 R@10 0.72 35ms
+chosen weight for bge-small-en-v1.5: 0.2 (core 57/58)
+sweep gdocs-bge-small w=0.2: core 56/58 (97%) MRR 0.884 R@10 1.00 23ms | dev 44/75 (59%) MRR 0.489 R@10 0.72 33ms
+sweep gdocs-bge-small w=0.3: core 56/58 (97%) MRR 0.893 R@10 1.00 25ms | dev 46/75 (61%) MRR 0.488 R@10 0.72 34ms
+sweep gdocs-bge-small w=0.4: core 56/58 (97%) MRR 0.895 R@10 1.00 23ms | dev 49/75 (65%) MRR 0.498 R@10 0.73 33ms
+sweep gdocs-bge-small w=0.5: core 56/58 (97%) MRR 0.904 R@10 1.00 25ms | dev 50/75 (67%) MRR 0.514 R@10 0.75 34ms
+sweep gdocs-bge-small w=0.6: core 57/58 (98%) MRR 0.913 R@10 1.00 22ms | dev 51/75 (68%) MRR 0.514 R@10 0.73 31ms
+sweep gdocs-bge-small w=0.8: core 57/58 (98%) MRR 0.913 R@10 1.00 22ms | dev 53/75 (71%) MRR 0.544 R@10 0.76 33ms
+sweep gdocs-bge-small w=1.0: core 57/58 (98%) MRR 0.915 R@10 1.00 23ms | dev 51/75 (68%) MRR 0.551 R@10 0.76 34ms
+chosen weight for gdocs-bge-small: 0.8 (core 57/58)
+
+=== TEST split (held out, scored once) ===
+lexical                                       37/75 (49%) MRR 0.373 R@10 0.61 21ms
+bge-small-en-v1.5 semantic                    44/75 (59%) MRR 0.473 R@10 0.69 9ms
+bge-small-en-v1.5 hybrid w=0.2                43/75 (57%) MRR 0.431 R@10 0.67 38ms
+bge-small-en-v1.5 core hybrid w=0.2           57/58 (98%) MRR 0.876 R@10 1.00 22ms
+gdocs-bge-small semantic                      51/75 (68%) MRR 0.513 R@10 0.76 8ms
+gdocs-bge-small hybrid w=0.8                  50/75 (67%) MRR 0.535 R@10 0.79 38ms
+gdocs-bge-small core hybrid w=0.8             57/58 (98%) MRR 0.913 R@10 1.00 23ms
+lexical core                                  58/58 (100%) MRR 0.859 R@10 1.00 11ms
+FINAL BENCH DONE

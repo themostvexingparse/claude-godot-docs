@@ -1,0 +1,29 @@
+# Python / test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Index build/runtime state (data/godot_docs_index.db itself is committed: the docs checkout isn't)
+data/*.db.tmp*
+data/*.db.warned
+# Embedding vectors are a regenerable cache: `gdocs index --vectors` (about 3-4 min on CPU)
+data/*_vectors.*.npz
+data/*_vectors.*.npz.tmp*
+
+# Optional godot-docs checkout for rebuilding the index
+/godot-docs/
+
+# Training-only artifacts (base model downloaded on demand, see README); runtime uses models/gdocs-bge-small
+models/bge-small-en-v1.5/
+models/gdocs-bge-small-step*/
+train/checkpoint/
+train/export_check/
+train/base_export/
+train/snapshot_step*/
+train/train.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,7 @@
+* text=auto
+gdocs text eol=lf
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.db binary
+*.onnx binary
+*.npz binary

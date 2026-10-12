@@ -1,0 +1,31 @@
+{
+ "base": "bge-small-en-v1.5",
+ "pairs": {
+  "handwritten": 732,
+  "heading": 1464,
+  "godot3": 314
+ },
+ "dropped_for_leakage": 60,
+ "examples": 3242,
+ "args": {
+  "epochs": 2,
+  "batch": 32,
+  "lr": 2e-05,
+  "temperature": 0.02,
+  "max_len": 192,
+  "negatives": 1,
+  "max_sections": 1500,
+  "handwritten_repeat": 2,
+  "threads": 6,
+  "seed": 0,
+  "dry_run": false,
+  "save_every": 20,
+  "max_examples": 0,
+  "resume": true,
+  "check_export": false,
+  "export_only": false,
+  "snapshot": false
+ },
+ "started_at": "2026-10-07 12:43:01",
+ "trained_at": "2026-10-07 12:57:25"
+}

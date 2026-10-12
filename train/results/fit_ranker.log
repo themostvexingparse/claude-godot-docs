@@ -1,0 +1,14 @@
+== lexical: 72 dev / 67 val queries with a judged answer among candidates
+   hand     dev 50/75 MRR 0.517 R@10 0.73 | val 39/75 MRR 0.447 R@10 0.65 | core 58/58 MRR 0.859 R@10 1.00
+   l2=1.0   CV dev 50/75 MRR 0.513 R@10 0.75 | CV val 40/75 MRR 0.436 R@10 0.67 | core (fit on both) 58/58 MRR 0.855 R@10 1.00 | CV MRR 0.474
+   l2=0.1   CV dev 52/75 MRR 0.511 R@10 0.76 | CV val 40/75 MRR 0.429 R@10 0.65 | core (fit on both) 51/58 MRR 0.817 R@10 0.98 | CV MRR 0.470
+   l2=0.01  CV dev 48/75 MRR 0.453 R@10 0.73 | CV val 37/75 MRR 0.426 R@10 0.60 | core (fit on both) 49/58 MRR 0.776 R@10 0.91 | CV MRR 0.440
+   l2=0.001 CV dev 43/75 MRR 0.440 R@10 0.69 | CV val 33/75 MRR 0.379 R@10 0.60 | core (fit on both) 49/58 MRR 0.763 R@10 0.91 | CV MRR 0.410
+   chosen l2=1.0: {'bias': 0.0, 'w': {'lhand': 0.9859, 'bm': 0.0059, 'cov2': 0.0143, 'tcov': 0.011, 'doc': -0.0456, 'ngram': 0.0004, 'chint': -0.0004, 'mhint': 0.0053, 'thint': -0.0286}}
+== hybrid: 73 dev / 72 val queries with a judged answer among candidates
+   hand     dev 59/75 MRR 0.633 R@10 0.83 | val 53/75 MRR 0.599 R@10 0.80 | core 57/58 MRR 0.916 R@10 1.00
+   l2=1.0   CV dev 56/75 MRR 0.638 R@10 0.81 | CV val 52/75 MRR 0.605 R@10 0.80 | core (fit on both) 57/58 MRR 0.917 R@10 1.00 | CV MRR 0.621
+   l2=0.1   CV dev 56/75 MRR 0.610 R@10 0.80 | CV val 55/75 MRR 0.609 R@10 0.80 | core (fit on both) 57/58 MRR 0.909 R@10 0.98 | CV MRR 0.610
+   l2=0.01  CV dev 54/75 MRR 0.595 R@10 0.80 | CV val 55/75 MRR 0.604 R@10 0.80 | core (fit on both) 49/58 MRR 0.804 R@10 0.98 | CV MRR 0.600
+   l2=0.001 CV dev 31/75 MRR 0.309 R@10 0.72 | CV val 31/75 MRR 0.282 R@10 0.69 | core (fit on both) 37/58 MRR 0.520 R@10 0.84 | CV MRR 0.296
+   chosen l2=1.0: {'bias': 0.0, 'w': {'lhand': 0.9438, 'bm': -0.0227, 'cov2': 0.0043, 'tcov': -0.0005, 'doc': -0.0332, 'ngram': 0.0003, 'chint': -0.0003, 'mhint': 0.0043, 'thint': -0.0117, 'sem': 0.0368, 'cos': 0.0183}}
